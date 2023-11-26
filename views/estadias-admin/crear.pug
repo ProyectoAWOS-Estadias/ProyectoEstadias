@@ -1,0 +1,53 @@
+extends ../layout/index
+
+block contenido
+    div.py-10
+        h1.text-4xl.my-10.font-extrabold.text-center.text-green-800 Estadias 
+          span.font-normal TIC 
+        h2.text-center.text-2xl.font-extrabold= pagina
+
+        div(class="bg-white shadow py-8 px-4 rounded mx-auto max-w-4xl my-10")
+            form.space-y-5
+                div.space-y-5
+                    h3.text-lg.leading-6.font-medium.text-gray-900 Informacion General
+                    p.text-gray-600 Informacion sobre la Empresa a Subir:
+
+            
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="name") Nombre de la empresa:
+                        input#name.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="Nombre comercial" name="name" type="text" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="giro") Giro de la empresa:
+                        input#giro.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="Tecnología, Industria, Automotriz..." name="giro" type="text" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="tel") Teléfono:
+                        input#tel.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="00 0000 0000" name="tel" type="tel" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="tel2") Teléfono adicional:
+                        input#tel2.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="00 0000 0000" name="tel2" type="tel" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="sitioweb") Sitio web:
+                        input#sitioweb.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="www.empresa.com" name="sitioweb" type="text" )
+                    div
+        
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="email") Email:
+                        input#email.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="user@domain.com" name="email" type="email")
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="direccion") Dirección:
+                        input#direccion.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC" placeholder="Calle, Número y Colonia" name="direccion" type="text" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="municipio") Municipio:
+                        input#municipio.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC"  name="municipio" type="text" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="estado") Estado:
+                        input#estado.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC"  name="estado" type="text" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="pais") País:
+                        input#pais.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC"  name="pais" type="text" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-700.mb-3.font-bold(for="cp") Código Postal:
+                        input#cp.w-full.px-3.py-2.border.border-gray-300.rounded-sm.text-petrolTIC(class="placeholder:text-greenTIC"  placeholder="00000" name="cp" type="text" )
+
+        
+                    div
+                        input#button_register(class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded" type="submit" value="Dar de alta empresa")
