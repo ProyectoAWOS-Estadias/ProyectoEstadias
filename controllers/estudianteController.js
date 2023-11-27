@@ -2,7 +2,7 @@
 
 const estudiante = (req, res) => {
     res.render('estudiantes/home', {
-        pagina: 'Bienvenido Estudiante',
+        pagina: 'Bienvenido Nuevo Estudiante',
         barra: true
     })
 }
